@@ -12,7 +12,7 @@ export function Timer() {
         }
         return prev - 1;
       });
-    }, 500);
+    }, 1000);
     return () => {
       clearInterval(id);
       console.log("unmounted");
